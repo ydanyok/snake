@@ -14,6 +14,14 @@ Model::Model(View* myview)
 		int y = rand() % (row - 3) + 2;
 		rabbits.push_back(Rabbit(x, y));
 	}
+	for (int i = 0; i < 10; ++i)
+        {
+                int x = rand() % (col - 3) + 2;
+		//int y = rand() % (row - 3) + 2;
+		int y = 5;
+                rabbits.push_back(Rabbit(x, y));
+        }
+
 	Coord begin;
 	begin.x = col / 2;
 	begin.y = row / 2;
